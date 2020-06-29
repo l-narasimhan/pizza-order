@@ -1,0 +1,33 @@
+{
+    "menuList":
+        {
+            "menuid" : "lunchpack",
+            "items": [
+                  {
+                    "price": "$10.00",
+                    "name": "Pizza",
+                    "description": "with Macaroni and Cheese"
+                  },
+                  {
+                    "price": "$12.00",
+                    "name": "Pizza Large",
+                    "description": "with Vegetables, Macaroni and Cheese"
+                  },
+                  {
+                    "price": "$9.00",
+                    "name": "Pasta",
+                    "description": "with strawbeery"
+                  },
+                  {
+                    "price": "$12.00",
+                    "name": "Pasta with coke",
+                    "description": "Large coke with Pasta"
+                  },
+                  {
+                    "price": "$13.00",
+                    "name": "Vegetable bowl",
+                    "description": "Purge vegetables with juice"
+                  }
+                ]
+        }
+}

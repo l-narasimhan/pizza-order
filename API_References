@@ -1,0 +1,141 @@
+// API Documentation 
+
+Create new users using /user API call 
+
+Method: POST
+Headers:
+Content/type: application/json
+Body
+
+{
+	"firstName" : "Badhri",
+	"lastName" : "SRL",
+	"email": "l.nar4@gmail.com",
+	"password": "Abcd@123",
+	"streetAddress": "0 Downing street"
+}
+
+Please note password should contain atleast 1 Capital, 1 special character and 1 number
+
+
+==================================================================================================
+
+Retrieve new users using /user API call 
+
+Method: GET
+Query parameters - email 
+Example: ?email=l.nar@gmdail.com
+Headers:
+Content/type: application/json
+
+
+====================================================================================================
+Update new users using /user API call 
+
+Method: PUT
+Headers:
+Content/type: application/json
+Body
+
+{
+	"firstName" : "Badhri",
+	"lastName" : "SRL",
+	"email": "l.nar4@gmail.com",
+	"password": "Abcd@123",
+	"streetAddress": "0 Downing street"
+}
+
+Please note password should contain atleast 1 Capital, 1 special character and 1 number
+==========================================================================================================
+
+Delete new users using /user API call 
+
+Method: Delete
+Query parameters - email 
+Example: ?email=l.nar@gmdail.com
+Headers:
+Content/type: application/json
+============================================================================================================
+
+Create new sessions using /token API call 
+
+Method: POST
+Headers:
+Content/type: application/json
+Body
+
+{
+	"email": "l.nar4@gmail.com",
+	"password": "Abcd@123"
+
+}
+
+=============================================================================================================
+If the FE finds the user is logged on for time greater than the session time, it will ask for extension
+
+Create new sessions using /token API call 
+
+Method: PUT
+Headers:
+Content/type: application/json
+Body
+
+{
+	"id": "<token>",
+	"extend": "true"
+
+}
+
+=================================================================================================================
+When the user pressess the logoff 
+If the FE finds the user is logged on for time greater than the session time, it will ask for extension
+
+remove the session using /token API call 
+
+Method: Delete
+query parameters= ?token=<token id>
+Headers:
+Content/type: application/json
+Body
+
+{
+	"id": "<token>",
+	"extend": "Abcd@123"
+
+}
+
+==========================================================================================================================
+Retrieve Menu items
+
+Method: GET
+
+URL - /localhost:3000/menu?id=lunchpack
+
+Query parameters - id=<pack name>
+
+==========================================================================================================================
+Order an items
+
+Method = POST
+
+Url - /order 
+
+// payment will use the storeed card number - hence card number not required in input request
+
+body:
+{
+  "email": "l.kar4@gmail.com",
+  "amount": 750,
+  "items": [
+    {
+      "name": "Pizza"
+    },
+    {
+      "name": "Pizza Large"
+    }
+  ],
+  "paymentStatus": "PENDING",
+  "sentNotification": "NO"
+}
+
+===================================================================================

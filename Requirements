@@ -1,0 +1,33 @@
+// Requirements
+
+User Creation API  - POST, GET, PUT, UPDATE
+----
+Name
+Password
+email Address 
+street address
+
+
+/logon - logoff
+
+
+
+
+/Menu items - Get CALL 
+
+
+/order - 
+order id 
+email address
+amount
+items {}
+paymentStatus - 
+notificationSent - 
+
+
+/pay 
+
+transactionID
+order id 
+
+
